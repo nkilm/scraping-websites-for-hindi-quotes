@@ -4,14 +4,14 @@ const cheerio = require("cheerio")
 
 URL = "https://muskaanhindi.com/motivational-quotes-in-hindi/"
 
+
 async function getInfo() {
     const {data} = await axios.get(URL);
-    // console.log(data);
     const $ = await cheerio.load(data);
-    $("blockquote").each((index,obj)=>{
-        console.log(index);
+    const quotes = await $("blockquote p");
+    quotes.each((index,ele)=>{
+        console.log(`${$(ele).text()}\n`);
     })
-
 }
 
-getInfo()
+getInfo();
