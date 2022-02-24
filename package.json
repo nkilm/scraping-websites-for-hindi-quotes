@@ -1,16 +1,17 @@
 {
   "name": "hindi-motivational-quotes",
   "version": "1.0.0",
-  "description": "",
+  "description": "Scraping website for Hindi Quotes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ."
   },
   "keywords": [],
-  "author": "",
+  "author": "Nikhil Mohite",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.26.0",
-    "cheerio": "^1.0.0-rc.10"
+    "cheerio": "^1.0.0-rc.10",
+    "jsonfile": "^6.1.0"
   }
 }
